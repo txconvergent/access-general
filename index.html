@@ -5,8 +5,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="index.css">
-
-<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
 
@@ -16,7 +14,7 @@
   <h2>Name of Project</h2>
 </header>
 
-<section>
+<section id='test'>
     <article>
         <h1>ASL Alphabet</h1>
         <img src="ASL_Alphabet.png" width="300" height="450">
@@ -84,7 +82,33 @@
 <footer>
   <p>Made by Texas Convergent</p>
 </footer>
+<script type="text/javascript">
 
+function chooseJPG(letter){
+
+    
+}
+    
+var dict = {A: "imageRef",
+    B: "imageRef",
+    C: "imageRef",
+    D: "imageRef"  };
+
+
+var video = document.querySelector("#videoElement");
+console.log(video)
+
+if (navigator.mediaDevices.getUserMedia) {
+  navigator.mediaDevices.getUserMedia({ video: true })
+    .then(function (stream) {
+      video.srcObject = stream;
+    })
+    .catch(function (err0r) {
+      console.log(err0r);
+    })
+};
+
+</script>
 </body>
 </html>
 

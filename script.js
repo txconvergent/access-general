@@ -1,4 +1,4 @@
-<script type="text/javascript">
+
 function chooseJPG(letter){
 
     
@@ -10,7 +10,8 @@ var dict = {A: "imageRef",
     D: "imageRef"  };
 
 
-var video = document.querySelector("#videoElement");
+var video = document.querySelector("#test");
+console.log(video)
 
 if (navigator.mediaDevices.getUserMedia) {
   navigator.mediaDevices.getUserMedia({ video: true })
@@ -18,7 +19,6 @@ if (navigator.mediaDevices.getUserMedia) {
       video.srcObject = stream;
     })
     .catch(function (err0r) {
-      console.log("Something went wrong!");
+      console.log(err0r);
     })
 };
-</script>
